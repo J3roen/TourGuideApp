@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Antwerp City Guide</string>
+    <string name="tab_text_1">Shop</string>
+    <string name="tab_text_2">Drink</string>
+    <string name="tab_text_3">Eat</string>
+    <string name="tab_text_4">Sleep</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+</resources>
