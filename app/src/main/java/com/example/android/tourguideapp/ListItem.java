@@ -8,7 +8,7 @@ public class ListItem implements Serializable{
     private int imgId;
     private String name;
     private String location;
-    HashMap<String, String> openingHours;
+    private HashMap<String, String> openingHours = new HashMap<>();
     private String description;
     private String tel;
 
@@ -17,8 +17,8 @@ public class ListItem implements Serializable{
         this.name = name.trim();
         this.tel = tel.trim();
         this.location = location.trim();
-        this.openingHours = openingHours;
         this.description = description.trim();
+        this.openingHours.putAll(openingHours);
     }
 
     public int getImgId() {

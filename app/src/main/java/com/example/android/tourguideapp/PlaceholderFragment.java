@@ -42,13 +42,10 @@ public class PlaceholderFragment extends android.support.v4.app.Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_main, container, false);
 
-        /*TextView textView = (TextView) rootView.findViewById(R.id.section_label);
-        textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));*/
-
         mRecyclerView = rootView.findViewById(R.id.section_label);
         /** use this setting to improve performance if you know that changes
          in content do not change the layout size of the RecyclerView */
-        mRecyclerView.setHasFixedSize(false);
+        mRecyclerView.setHasFixedSize(true);
 
         // use a linear layout manager
         mLayoutManager = new LinearLayoutManager(this.getContext());
